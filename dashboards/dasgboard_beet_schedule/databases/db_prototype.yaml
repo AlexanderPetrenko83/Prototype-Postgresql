@@ -1,0 +1,13 @@
+database_name: db_prototype
+sqlalchemy_uri: postgresql+psycopg2://admin:XXXXXXXXXX@host.docker.internal:5432/db_prototype
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: 1942b1e0-9534-4277-b413-09e4b773038c
+version: 1.0.0

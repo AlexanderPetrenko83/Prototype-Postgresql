@@ -1,0 +1,50 @@
+slice_name: Beet schedule
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 24__table
+  viz_type: table
+  query_mode: raw
+  groupby: []
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    beet_harvest_day: true
+    version_id: true
+    creation_time: true
+  all_columns:
+  - short_name
+  - unloading_point_name_rus
+  - beet_shipping_day
+  - loading_point_id
+  - loading_point_name_rus
+  - beet_harvest_weight_selected
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    subject: beet_harvest_day
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  order_by_cols:
+  - '["short_name", true]'
+  - '["unloading_point_name_rus", true]'
+  - '["beet_shipping_day", true]'
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  extra_form_data: {}
+  dashboards:
+  - 13
+query_context: '{"datasource":{"id":24,"type":"table"},"force":false,"queries":[{"filters":[{"col":"beet_harvest_day","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["short_name","unloading_point_name_rus","beet_shipping_day","loading_point_id","loading_point_name_rus","beet_harvest_weight_selected"],"orderby":[["short_name",true],["unloading_point_name_rus",true],["beet_shipping_day",true]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"24__table","viz_type":"table","query_mode":"raw","groupby":[],"time_grain_sqla":"P1D","temporal_columns_lookup":{"beet_harvest_day":true,"version_id":true,"creation_time":true},"all_columns":["short_name","unloading_point_name_rus","beet_shipping_day","loading_point_id","loading_point_name_rus","beet_harvest_weight_selected"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","subject":"beet_harvest_day","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"order_by_cols":["[\"short_name\", true]","[\"unloading_point_name_rus\",
+  true]","[\"beet_shipping_day\", true]"],"row_limit":1000,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","show_cell_bars":true,"color_pn":true,"extra_form_data":{},"dashboards":[13],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 5c6d6e59-5cb1-4698-a17e-e90b26375832
+version: 1.0.0
+dataset_uuid: c257c292-9f49-4c93-b50b-6a48a1e20058

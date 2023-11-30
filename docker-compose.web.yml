@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  web:
+    container_name: web_prototype
+    build:
+      context: .
+      dockerfile: ./docker/web/Dockerfile
+    volumes:
+      - ./data/:/app/data/
+    ports:
+      - "8501:8501"
+    restart: unless-stopped

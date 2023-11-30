@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+# ---------------------------------- POSTGRESQL ----------------------------------
+  postgres:
+    image: postgres:14.8-alpine3.18
+    container_name: db_prototype
+    environment:
+      POSTGRES_DB: "${DB_DATABASE}"
+      POSTGRES_USER: "${DB_USER}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD}"
+      POSTGRES_HOST: "${DB_HOST}"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - ./db/storage:/var/lib/postgresql/data
+      - ./postgresql.conf:/var/lib/postgresql/data/postgresql.conf
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+    command: -p 5432
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d db_prototype"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 4G

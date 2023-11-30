@@ -1,0 +1,69 @@
+slice_name: "\u041E\u0431\u044A\u0435\u043C \u0441\u0432\u0435\u043A\u043B\u044B \u043F\
+  \u043E \u0437\u0430\u0432\u043E\u0434\u0430\u043C \u0432 \u043E\u043F\u0435\u0440\
+  \u0430\u0442\u0438\u0432\u043D\u044B\u0439 \u043F\u0435\u0440\u0438\u043E\u0434"
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 25__table
+  viz_type: pie
+  groupby:
+  - short_name
+  metric:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: selected_weight
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 777
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DOUBLE PRECISION
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(selected_weight)
+    optionName: metric_lf566c90gzp_7engiz01bo8
+  adhoc_filters:
+  - clause: WHERE
+    subject: beet_shipping_day
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  outerRadius: 70
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":25,"type":"table"},"force":false,"queries":[{"filters":[{"col":"beet_shipping_day","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["short_name"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"selected_weight","description":null,"expression":null,"filterable":true,"groupby":true,"id":777,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DOUBLE
+  PRECISION","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(selected_weight)","optionName":"metric_lf566c90gzp_7engiz01bo8"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"selected_weight","description":null,"expression":null,"filterable":true,"groupby":true,"id":777,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DOUBLE
+  PRECISION","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(selected_weight)","optionName":"metric_lf566c90gzp_7engiz01bo8"},false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"25__table","viz_type":"pie","groupby":["short_name"],"metric":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"selected_weight","description":null,"expression":null,"filterable":true,"groupby":true,"id":777,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DOUBLE
+  PRECISION","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(selected_weight)","optionName":"metric_lf566c90gzp_7engiz01bo8"},"adhoc_filters":[{"clause":"WHERE","subject":"beet_shipping_day","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"show_legend":true,"legendType":"scroll","legendOrientation":"top","label_type":"key","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"outerRadius":70,"innerRadius":30,"extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 7d590c30-ed93-4185-8251-11a5c3a0d02e
+version: 1.0.0
+dataset_uuid: bc89e7a7-9bd7-4d15-aaf7-6e26d41a5f51
